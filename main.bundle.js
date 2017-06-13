@@ -101,7 +101,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 var appRouter = [
-    { path: "", redirectTo: "home", pathMatch: "full" },
+    { path: "", component: __WEBPACK_IMPORTED_MODULE_5__home_component_home_component_component__["a" /* HomeComponentComponent */] },
     { path: "home", component: __WEBPACK_IMPORTED_MODULE_5__home_component_home_component_component__["a" /* HomeComponentComponent */] },
     { path: "introduce", component: __WEBPACK_IMPORTED_MODULE_6__introduce_component_introduce_component_component__["a" /* IntroduceComponentComponent */] },
     { path: "work", component: __WEBPACK_IMPORTED_MODULE_7__working_component_working_component_component__["a" /* WorkingComponentComponent */] },
@@ -125,7 +125,7 @@ AppModule = __decorate([
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* RouterModule */].forRoot(appRouter),
+            __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* RouterModule */].forRoot(appRouter, { useHash: true }),
             __WEBPACK_IMPORTED_MODULE_4__ng_bootstrap_ng_bootstrap__["a" /* NgbModule */].forRoot()
         ],
         providers: [],
